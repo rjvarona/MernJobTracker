@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
     Name: {type: String, minlength: 3},
     DOB: {type: Date},
-    preferredJob: {type: string},
+    PreferredJob: {type: string},
 
 }, {
     timestamps: true,

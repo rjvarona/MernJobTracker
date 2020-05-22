@@ -21,7 +21,7 @@ const userRouter = require('./routes/UserRouter');
 const jobRouter = require('./routes/JobRouter');
 
 app.use('/users', userRouter);
-app.use('/jobs', jobRouter);
+// app.use('/jobs', jobRouter);
 
 
 connection.once('open', () => {
@@ -32,3 +32,4 @@ connection.once('open', () => {
 app.listen(port, () => {
     console.log(`server is listening on PORT ${port}`);
 });
+
